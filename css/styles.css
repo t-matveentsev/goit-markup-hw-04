@@ -47,6 +47,16 @@ ol {
   padding: 0 15px;
   margin: 0 auto;
 }
+/* sprite style
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+} */
 /* #region ================================header */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -67,6 +77,8 @@ ol {
 .nav {
   display: block;
   padding: 24px 0;
+  border-bottom: 4px solid #404bbf;
+  border-radius: 2px;
 }
 .list-contacts {
   display: flex;
@@ -112,8 +124,17 @@ ol {
 /* #region ================================main-page */
 
 .main-page {
-  background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.jpg);
+  background-color: #2e2f42b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-title {
@@ -170,18 +191,28 @@ ol {
   align-items: center;
   gap: 24px;
 }
-.item-ben {
+.list-ben .item-ben {
   background-color: #fff;
   width: calc((100% - 72px) / 4);
 }
-.title-ben {
+.icon-box {
+  background-color: #f4f4fd;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.item-ben .title-ben {
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
 }
-.text-ben {
+.item-ben .text-ben {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -229,7 +260,12 @@ ol {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-
+.team-icon-box {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  justify-content: center;
+}
 /* #endregion team */
 
 /* #region ================================portfolio */
@@ -297,5 +333,16 @@ ol {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-
+.footer-box {
+  display: flex;
+}
+.footer-icon {
+  display: inline-block;
+  margin-left: 120px;
+}
+.footer-icon-box {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
 /* #endregion footer */
