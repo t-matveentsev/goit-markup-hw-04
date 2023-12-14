@@ -279,7 +279,7 @@ ol {
   margin-top: 8px;
   justify-content: center;
 }
-.list-item-social .icon {
+.icon {
   display: flex;
   fill: #f4f4fd;
   width: 40px;
