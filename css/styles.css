@@ -132,7 +132,7 @@ ol {
       rgba(46, 47, 66, 0.7)
     ),
     url(/images/people-office.jpg);
-  background-color: #2e2f42b2;
+  /* background-color: #2e2f42b2; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
