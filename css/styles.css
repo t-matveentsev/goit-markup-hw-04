@@ -65,9 +65,10 @@ ol {
   align-items: center;
   gap: 40px;
 }
-.nav {
+.list-nav .nav {
   display: block;
   padding: 24px 0;
+  transition: color 150ms ease-in-out 0ms;
 }
 
 .nav.active {
@@ -108,6 +109,11 @@ ol {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
+.list-contact .contact {
+  color: #2e2f42;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
 .nav:hover,
 .nav:focus,
 .contact:hover,
@@ -115,11 +121,6 @@ ol {
   color: #404bbf;
 }
 
-.contact {
-  color: #2e2f42;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-}
 /* #endregion */
 
 /* #region ================================main-page */
@@ -132,7 +133,7 @@ ol {
       rgba(46, 47, 66, 0.7)
     ),
     url(/images/people-office.jpg);
-  /* background-color: #2e2f42b2; */
+  background-color: #2e2f42b2;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -164,7 +165,9 @@ ol {
   margin: auto;
   display: block;
   border-radius: 4px;
+  transition: background-color 150ms ease-in-out 0ms;
 }
+
 .button:hover,
 .button:focus {
   background-color: #404bbf;
@@ -276,6 +279,7 @@ ol {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  transition: background-color 150ms ease-in-out 0ms;
 }
 .team-icon-box .icon:hover {
   background-color: #404bbf;
@@ -397,6 +401,7 @@ ol {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  transition: background-color 150ms ease-in-out 0ms;
 }
 .footer-icon-box .icon:hover {
   background-color: #31d0aa;
