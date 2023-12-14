@@ -49,14 +49,14 @@ ol {
 }
 
 /* #region ================================header */
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
 .box-header {
   display: flex;
   align-items: center;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid #e7e9fc;
 }
-.navigacion {
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -68,19 +68,35 @@ ol {
 .list-nav .nav {
   display: block;
   padding: 24px 0;
-  transition: color 150ms ease-in-out 0ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.nav {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
 .nav.active {
   color: #404bbf;
+  position: relative;
 }
 .nav.active::after {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
   content: "";
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
+}
+.nav:hover,
+.nav:focus,
+.contact:hover,
+.contact:focus {
+  color: #404bbf;
 }
 .list-contacts {
   display: flex;
@@ -102,30 +118,18 @@ ol {
 .span-top {
   color: #4d5ae5;
 }
-.nav {
-  color: #2e2f42;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-}
-.list-contact .contact {
+.list-contacts .contact {
   color: #2e2f42;
   line-height: 24px;
   letter-spacing: 0.32px;
-}
-.nav:hover,
-.nav:focus,
-.contact:hover,
-.contact:focus {
-  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* #endregion */
 
 /* #region ================================main-page */
 
-.main-page {
+.box-main {
   padding: 188px 0;
   background-image: linear-gradient(
       to bottom,
@@ -137,6 +141,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
 }
 
 .main-title {
@@ -165,7 +170,7 @@ ol {
   margin: auto;
   display: block;
   border-radius: 4px;
-  transition: background-color 150ms ease-in-out 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -200,13 +205,15 @@ ol {
   width: calc((100% - 72px) / 4);
 }
 .icon-box {
+  display: flex;
   background-color: #f4f4fd;
   width: 264px;
   height: 112px;
   border-radius: 4px;
   border: 1px solid #8e8f99;
-  text-align: center;
-  padding: 24px 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .item-ben .title-ben {
@@ -264,13 +271,13 @@ ol {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-.team-icon-box {
+.list-social-media {
   display: flex;
   gap: 24px;
   margin-top: 8px;
   justify-content: center;
 }
-.team-icon-box .icon {
+.list-social-media .icon {
   display: flex;
   fill: #f4f4fd;
   width: 40px;
@@ -281,7 +288,7 @@ ol {
   align-items: center;
   transition: background-color 150ms ease-in-out 0ms;
 }
-.team-icon-box .icon:hover {
+.list-social-media .icon:hover {
   background-color: #404bbf;
 }
 /* #endregion team */
@@ -339,12 +346,12 @@ ol {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY (100%);
+  transform: translateY (0);
   transition: transform 250ms ease-in-out;
 }
 
 .item-port:hover .overlay {
-  transform: translateY(-100%);
+  transform: translateY(100%);
 }
 .item-port:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
