@@ -283,7 +283,7 @@ ol {
   justify-content: center;
   align-items: center;
 }
-.list-item-social .icon {
+.icon {
   display: flex;
   fill: #f4f4fd;
   width: 40px;
@@ -294,7 +294,8 @@ ol {
   align-items: center;
   transition: background-color 150ms ease-in-out 0ms;
 }
-.list-item-social .icon:hover {
+.icon:hover,
+.icon:focus {
   background-color: #404bbf;
 }
 /* #endregion team */
