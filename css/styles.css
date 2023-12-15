@@ -67,7 +67,7 @@ ol {
   align-items: center;
   gap: 40px;
 }
-.list-nav .nav {
+.nav {
   display: block;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -120,7 +120,7 @@ ol {
 .span-top {
   color: #4d5ae5;
 }
-.list-contacts .contact {
+.contact {
   color: #2e2f42;
   line-height: 24px;
   letter-spacing: 0.32px;
@@ -203,7 +203,7 @@ ol {
   align-items: center;
   gap: 24px;
 }
-.list-ben .item-ben {
+.item-ben {
   background-color: #fff;
   width: calc((100% - 72px) / 4);
 }
@@ -219,14 +219,14 @@ ol {
   margin-bottom: 8px;
 }
 
-.item-ben .title-ben {
+.title-ben {
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
 }
-.item-ben .text-ben {
+.text-ben {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
@@ -354,6 +354,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+
   padding: 40px 32px;
   background: #4d5ae5;
   width: 100%;
